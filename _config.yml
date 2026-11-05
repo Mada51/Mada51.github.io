@@ -1,0 +1,37 @@
+title: Mada51
+description: >-
+  Notes on software, system, infrastructure and network architecture.
+author: 이규훈
+email: mfc2000@gmail.com
+url: "https://mada51.github.io"
+baseurl: ""
+github_username: mada51
+
+lang: ko
+timezone: Asia/Seoul
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .bundle/
+  - .jekyll-cache/
+
+# minima 2.5 still uses Sass @import / lighten(); hide Dart Sass deprecation noise.
+sass:
+  quiet_deps: true
+  silence_deprecations: [import, global-builtin, color-functions]
